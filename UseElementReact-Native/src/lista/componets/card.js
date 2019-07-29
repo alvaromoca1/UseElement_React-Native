@@ -8,11 +8,11 @@ class CardView extends Component{
         <View style={styles.cont}>
             <Image
                 style={{width: 70, height: 70}}
-                source={{uri: this.props.img}}
+                source={{uri: this.props.medium_cover_image}}
             />
             <View style={styles.text}>
                 <Text style={styles.title}>{this.props.title}</Text>
-                <Text>{this.props.descripcion}</Text>
+                <Text>{this.props.year}</Text>
             </View>
         </View> 
        );
@@ -20,7 +20,8 @@ class CardView extends Component{
 }
 const styles = StyleSheet.create({
     cont: {
-      flexDirection:'row'
+      flexDirection:'row',
+      alignItems:'center'
     },
     text:{
         marginVertical:10,
